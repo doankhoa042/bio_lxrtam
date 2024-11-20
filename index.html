@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tâm Luxury - Bio Link</title>
+  <!-- Thêm favicon cho tab -->
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Times New Roman', Times, serif, sans-serif;
       text-align: center;
       background: #f7f7f7;
       color: #333;
@@ -20,32 +23,62 @@
       margin-bottom: 20px;
     }
     .profile img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 2px solid #ccc;
+      width: 45%;
+      height: auto;
+      border-radius: 10%;
+      border: 2px solid #EEB422;
+      max-height: 200px;
+      max-width: 210px;
+      padding: 8px;
     }
     .profile h1 {
-      font-size: 24px;
+      font-size: 30px;
       margin: 10px 0;
     }
     .profile p {
-      font-size: 16px;
+      font-size: 24px;
       color: #666;
+
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
     }
     .links a {
-      display: block;
-      background: #007bff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(45deg, #b8b8b8, #d1d1d1);
       color: white;
       text-decoration: none;
       padding: 12px 20px;
       margin: 10px 0;
       border-radius: 5px;
       font-size: 18px;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 350px;
+    }
+    .links a img {
+      width: 40px;
+      height: 40px;
+      margin-right: 9%;
+    }
+    .links a img.gold-frame {
+      border: 1px solid gold;
+      border-radius: 15%;
+      background-color: white;
+      width: 40px;
+      height: 40px;
+      margin-right: 9%;
     }
     .links a:hover {
-      background: #0056b3;
+      background: linear-gradient(45deg, #f1f1f1, #e0e0e0);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
@@ -57,10 +90,18 @@
       <p>Đẳng cấp trang sức kim cương</p>
     </div>
     <div class="links">
-      <a href="https://www.tiktok.com/search?q=tam%20luxury&t=1732048618829" target="_blank">TikTok</a>
-      <a href="https://www.instagram.com/tamluxury" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/tamluxury" target="_blank">Facebook</a>
-      <a href="https://tamluxury.vn" target="_blank">Website</a>
+      <a href="https://www.tiktok.com/@tamluxury.vn" target="_blank">
+        <img src="tiktok.png" alt="TikTok">TikTok
+      </a>
+      <a href="https://www.instagram.com/tamluxury.vn/" target="_blank">
+        <img src="instagram.png" alt="Instagram">Instagram
+      </a>
+      <a href="https://www.facebook.com/TamLuxuryDiamondJewelry932929999" target="_blank">
+        <img src="facebook.png" alt="Facebook">Facebook
+      </a>
+      <a href="https://tamluxury.vn/" target="_blank">
+        <img class="gold-frame" src="logo.png" alt="Website">Website
+      </a>
     </div>
   </div>
 </body>

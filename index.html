@@ -13,7 +13,7 @@
             font-family: 'Montserrat', sans-serif;
             text-align: center;
             background: #000000;
-            color: #333;
+            color: #f1f1f1; /* Màu chữ sáng hơn để phù hợp với nền tối */
             padding: 2px;
         }
 
@@ -48,13 +48,15 @@
 
         .profile h1 {
             font-size: 26px;
-            margin: 10px 0;
-            color: #f1f1f1;
+            margin: 5px 0 7px 0;
+            color: #EEB422;
         }
 
         .profile p {
             font-size: 16px;
             color: #f1f1f1;
+            margin: 5px 0 7px 0;
+
         }
 
         .check {
@@ -74,23 +76,24 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            background: linear-gradient(45deg, #fffefe, #ffffff);
-            color: rgb(0, 0, 0);
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25)); /* Gradient trắng nhạt hơn cho nền tối */
+            color: #ffffff; /* Màu chữ trắng để dễ đọc hơn trên nền tối */
             text-decoration: none;
             padding: 12px 20px;
             margin: 10px 0;
             border-radius: 5px;
             font-size: 18px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Đổ bóng tối hơn để phù hợp với nền */
             width: 90%;
             max-width: 320px;
-            transition: transform 0.3s ease, background-color 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
             gap: 4vw; /* Khoảng cách giữa icon và nội dung */
         }
 
         .links a:hover {
-            background: linear-gradient(45deg, #f1f1f1, #e0e0e0);
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)); /* Tăng độ sáng khi hover */
             transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(255, 255, 255, 0.2); /* Đổ bóng sáng hơn khi hover để nổi bật */
         }
 
         .links a img {
@@ -133,49 +136,42 @@
                 <img src="facebook.png" alt="Facebook">
                 <div>
                     <span>Facebook</span>
-                    <!-- <span>@Tamluxury.vn</span> -->
                 </div>
             </a>
             <a href="https://www.facebook.com/TamLuxuryDiamondJewelry932929999?mibextid=LQQJ4d" target="_blank">
                 <img src="facebook.png" alt="Facebook">
                 <div>
                     <span>Fanpage 1</span>
-                    <!-- <span>@TamLuxuryDiamondJewelry</span> -->
                 </div>
             </a>
             <a href="https://www.facebook.com/tamluxury.com0932929999?mibextid=LQQJ4d" target="_blank">
                 <img src="facebook.png" alt="Facebook">
                 <div>
                     <span>Fanpage 2</span>
-                    <!-- <span>@tamluxury.com</span> -->
                 </div>
             </a>
             <a href="https://zalo.me/0932929999" target="_blank">
                 <img class="zalo" src="zalo.png" alt="Zalo">
                 <div>
                     <span>Zalo</span>
-                    <!-- <span>0932929999</span> -->
                 </div>
             </a>
             <a href="https://www.tiktok.com/@tamluxury.vn" target="_blank">
                 <img src="tiktok.png" alt="TikTok">
                 <div>
                     <span>TikTok</span>
-                    <!-- <span>@tamluxury.vn</span> -->
                 </div>
             </a>
             <a href="https://www.tiktok.com/@tamluxury.vn" target="_blank">
                 <img src="youtube.png" alt="YouTube">
                 <div>
                     <span>YouTube</span>
-                    <!-- <span>@tamluxury.vn</span> -->
                 </div>
             </a>
             <a href="https://tamluxury.vn/" target="_blank">
                 <img class="gold-frame" src="logo.png" alt="Website">
                 <div>
-                    <span>Website</span>
-                    <!-- <span>tamluxury.vn</span> -->
+                    <span>Website Tâm Luxury</span>
                 </div>
             </a>
             <p class="name">Công ty TNHH Tâm Luxury</p>

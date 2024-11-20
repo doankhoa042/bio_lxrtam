@@ -13,9 +13,8 @@
             font-family: 'Montserrat', sans-serif;
             text-align: center;
             background: #000000;
-            color: #f1f1f1; /* Màu chữ sáng hơn để phù hợp với nền tối */
+            color: #f1f1f1;
             padding: 2px;
-
         }
 
         .container {
@@ -57,7 +56,6 @@
             font-size: 16px;
             color: #f1f1f1;
             margin: 5px 0 7px 0;
-
         }
 
         .check {
@@ -73,43 +71,50 @@
             margin-top: 20px;
         }
 
-        .links a {
+        .button-group {
             display: flex;
             align-items: center;
-            border-radius: 20%;
-            justify-content: flex-start;
-            background: linear-gradient(45deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25)); /* Gradient trắng nhạt hơn cho nền tối */
-            color: #ffffff; /* Màu chữ trắng để dễ đọc hơn trên nền tối */
+            justify-content: start; /* Align items to the start */
+            gap: 10px; /* Khoảng cách giữa các button */
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .links a {
+            flex-grow: 1; /* Ensures link takes remaining space */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25));
+            color: #ffffff;
             text-decoration: none;
-            padding: 12px 20px;
-            margin: 10px 0;
-            border-radius: 5px;
+            padding: 8px 8px;
+            border-radius: 20px;
             font-size: 18px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Đổ bóng tối hơn để phù hợp với nền */
-            width: 90%;
-            max-width: 320px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-            gap: 4vw; /* Khoảng cách giữa icon và nội dung */
+            margin-right: 50px;
         }
 
         .links a:hover {
-            background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)); /* Tăng độ sáng khi hover */
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4));
             transform: translateY(-5px);
-            box-shadow: 0 6px 8px rgba(255, 255, 255, 0.2); /* Đổ bóng sáng hơn khi hover để nổi bật */
+            box-shadow: 0 6px 8px rgba(255, 255, 255, 0.2);
         }
 
         .links a img {
             width: 40px;
             height: 40px;
-            border-radius: 15%; /* Nếu cần */
-            flex-shrink: 0; /* Đảm bảo icon không bị co */
+            border-radius: 15%;
+            flex-shrink: 0;
         }
 
-        .links a div {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Nội dung canh trái */
-            line-height: 1.2; /* Khoảng cách giữa các dòng */
+        .logo-frame {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0; 
+            padding-right: 30px;
+    padding-left: 50px;
         }
 
         .name {
@@ -118,6 +123,12 @@
             font-weight: bold;
             text-align: center;
             margin-top: 10px;
+        }
+
+        /* Custom button length for Facebook and TikTok */
+        .facebook-button a,
+        .tiktok-button a {
+            width: 100px;
         }
     </style>
 </head>
@@ -134,51 +145,48 @@
             <p>Địa chỉ: 714 - 716 Trần Hưng Đạo, P.2, Quận 5, Thành phố Hồ Chí Minh, Vietnam</p>
         </div>
         <div class="links">
-            <a href="https://www.facebook.com/Tamluxury.vn?mibextid=LQQJ4d" target="_blank">
-                <img src="facebook.png" alt="Facebook">
-                <div>
+            <div class="button-group facebook-button">
+                <img class="logo-frame" src="facebook.png" alt="Facebook Icon">
+                <a href="https://www.facebook.com/Tamluxury.vn?mibextid=LQQJ4d" target="_blank">
                     <span>Facebook</span>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/TamLuxuryDiamondJewelry932929999?mibextid=LQQJ4d" target="_blank">
-                <img src="facebook.png" alt="Facebook">
-                <div>
+                </a>
+            </div>
+            <div class="button-group">
+                <img class="logo-frame" src="facebook.png" alt="Facebook Icon">
+                <a href="https://www.facebook.com/TamLuxuryDiamondJewelry932929999?mibextid=LQQJ4d" target="_blank">
                     <span>Fanpage 1</span>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/tamluxury.com0932929999?mibextid=LQQJ4d" target="_blank">
-                <div class="icon">
-                    <img src="facebook.png" alt="Facebook">
-                </div>
-                <div class="content">
+                </a>
+            </div>
+            <div class="button-group">
+                <img class="logo-frame" src="facebook.png" alt="Facebook Icon">
+                <a href=" https://www.facebook.com/tamluxury.com0932929999?mibextid=LQQJ4d" target="_blank">
                     <span>Fanpage 2</span>
-                </div>
-            </a>
-            
-            <a href="https://zalo.me/0932929999" target="_blank">
-                <img class="zalo" src="zalo.png" alt="Zalo">
-                <div>
+                </a>
+            </div>
+            <div class="button-group">
+                <img class="logo-frame" src="zalo.png" alt="Zalo Icon">
+                <a href="https://zalo.me/0932929999" target="_blank">
                     <span>Zalo</span>
-                </div>
-            </a>
-            <a href="https://www.tiktok.com/@tamluxury.vn" target="_blank">
-                <img src="tiktok.png" alt="TikTok">
-                <div>
-                    <span>TikTok</span>
-                </div>
-            </a>
-            <a href="https://youtube.com/@tamluxury?si=vbuQ6G4cvG_iCTpX" target="_blank">
-                <img src="youtube.png" alt="YouTube">
-                <div>
-                    <span>YouTube</span>
-                </div>
-            </a>
-            <a href="https://tamluxury.vn/" target="_blank">
-                <img class="gold-frame" src="logo.png" alt="Website">
-                <div>
+                </a>
+            </div>
+            <div class="button-group tiktok-button">
+                <img class="logo-frame" src="tiktok.png" alt="Tiktok Icon">
+                <a href="https://www.tiktok.com/@tamluxury.vn" target="_blank">
+                    <span>Tiktok</span>
+                </a>
+            </div>
+            <div class="button-group">
+                <img class="logo-frame" src="youtube.png" alt="Youtube Icon">
+                <a href="https://youtube.com/@tamluxury?si=vbuQ6G4cvG_iCTpX" target="_blank">
+                    <span>Youtube</span>
+                </a>
+            </div>
+            <div class="button-group">
+                <img class="logo-frame" src="logo.png" alt="Website">
+                <a href="https://tamluxury.vn/" target="_blank">
                     <span>Website Tâm Luxury</span>
-                </div>
-            </a>
+                </a>
+            </div>
             <p class="name">Công ty TNHH Tâm Luxury</p>
         </div>
     </div>

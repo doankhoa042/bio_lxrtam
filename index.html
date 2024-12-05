@@ -30,14 +30,25 @@
         }
 
         .profile img.logoLX {
-            width: 50%;
-            height: auto;
-            border-radius: 10%;
-            border: 2px solid #EEB422;
-            max-height: 280px;
-            max-width: 210px;
-            padding: 8px;
-        }
+        width: 50%;
+        height: auto;
+        border-radius: 10%;
+        border: 2px solid #EEB422;
+        max-height: 280px;
+        max-width: 210px;
+         padding: 8px;
+         box-shadow: 0 0 20px #EEB422, 0 0 40px #FFD700, 0 0 60px #FFD700;
+        animation: neonGlow 2s infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 10px #EEB422, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+    100% {
+        box-shadow: 0 0 30px #EEB422, 0 0 25px #FFD700, 0 0 25px #FFD700;
+    }
+}
 
         .profile-header {
             display: flex;
